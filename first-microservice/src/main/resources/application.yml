@@ -2,10 +2,12 @@ spring:
     application:
         name: first-service
     rabbitmq:
+        address: amqp://guest@127.0.0.1:15672/
         host: localhost
         port: 5672
         username: guest
         password: guest
+        exchange: Greetings
 server:
     port: 
         8081
