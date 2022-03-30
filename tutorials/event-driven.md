@@ -201,7 +201,7 @@ Você pode testar a aplicação, executando o projeto e acessando o endereço `h
 
 O microsserviço `second-microservice` será reaproveitado como aplicação consumidora de eventos, o `consumer`. Nesse exemplo será acionado um método em um serviço para enviar um e-mail sempre que a queue `greetings-sent` receber uma mensagem com bind da exchange Greetings. Ou seja, o fluxo completo é: sempre que alguém acessar a rota `GET /hello`, um e-mail será enviado.
 
-Além das dependências existentes na aplicação criada no exemplo anterior, nós iremos também adicionar a dependência do **Spring for RabbitMQ**, que contém `spring-boot-starter-amqp` e `spring-rabbit-test` responsáveis por conectar o microsserviço na instância do RabbitMQ.
+Além das dependências existentes na aplicação criada no exemplo anterior, nós iremos também adicionar a dependência do **Spring for RabbitMQ**, que contém `spring-boot-starter-amqp` e `spring-rabbit-test` responsáveis por conectar o microsserviço na instância do RabbitMQ, como também a dependência para possibilitar o envio de e-mail, o **Java Mail Sender I/O**, que contém o `spring-boot-starter-mail`.
 
 O próximo passo é inserir as configurações do RabbitMQ e de acesso ao servidor de e-mail no arquivo de configuração, como no exemplo a seguir:
 
