@@ -1,4 +1,4 @@
-# Projeto de Microsserviços com Spring Boot
+# Projeto de Microsserviços com Mensageria com Spring Boot
 
 Neste projeto, você irá praticar a codificação de aplicações que utilizam sistemas de mensageria, segundo uma arquitetura orientada a eventos, podendo reaproveitar ou não a estrutura de microsserviços. Caso você queira reaproveitar, este tutorial será uma continuação do anterior, porém, se você optar por criar apenas um microsserviço isolado, basta dispensar as dependências e configurações relacionadas ao projeto Spring Cloud e criar um monolito com as configurações relacionadas a troca de mensagens.
 
