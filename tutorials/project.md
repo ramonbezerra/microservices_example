@@ -227,11 +227,11 @@ spring:
             - id: helloModule
               uri: lb://FIRST-SERVICE
               predicates:
-              - Path=/hello-message/**
+              - Path=/hello/**
             - id: hiModule
               uri: lb://SECOND-SERVICE
               predicates:
-              - Path=/hi-message/**
+              - Path=/hi/**
 ```
 
 Note que, para cada rota, foi inserido o prefixo `lb`, de *load balance*, seguido do nome conforme registrado no Eureka Server. Além disso, há um conjunto de `predicates`, que são as URLs de máscara, que estarão disponíveis para os clients.
