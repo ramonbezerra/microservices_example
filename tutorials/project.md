@@ -198,7 +198,7 @@ Note que, cada microsserviço é registrado com letras maiúsculas. Isso será i
 
 Um gateway tem a função de encapsular a(s) arquitetura(s) da solução e fornecer uma interface de uso para os clientes externos. Nesse contexto, o gateway ainda pode acumular outras responsabilidades, como, por exemplo, autenticação, monitoramento e balanceamento de carga.
 
-Esta aplicação terá como dependências o **Eureka Discovery Client** e o **Spring Boot Actuator**.
+Esta aplicação terá como dependências, além do **Eureka Discovery Client** e do **Spring Boot Actuator** como os microsserviços, a dependência do **Spring Cloud Gateway** para fazer o balanceamento.
 
 De forma semelhante aos microsserviços, a classe principal também terá a anotação `@EnableEurekaClient`.
 
